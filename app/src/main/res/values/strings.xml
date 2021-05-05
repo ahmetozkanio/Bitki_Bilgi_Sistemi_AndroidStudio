@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Bitki_Bilgi_Sistemi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tabbed_avtivity">TabbedAvtivity</string>
+    <string name="tab_text_1">Genel</string>
+    <string name="tab_text_2">Habitus</string>
+    <string name="tab_text_3">Yaprak</string>
+    <string name="tab_text_4">Çiçek</string>
+    <string name="tab_text_5">Meyve</string>
+    <string name="tab_text_6">Görseller</string>
+    <string name="tab_text_7">Kullanım alanları</string>
+    <string name="tab_text_8">Kullanım amacı</string>
+
+</resources>

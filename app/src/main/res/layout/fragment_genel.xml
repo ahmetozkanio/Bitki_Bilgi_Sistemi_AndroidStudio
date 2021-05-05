@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/scrollViewPadding"
+    android:layout_margin="@dimen/scrollViewMargin"
+
+
+
+
+
+    tools:context="com.example.bitki_bilgi_sistemi.TableFragments.GenelFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sniglet"
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+        android:text="Latince İsmi"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/titleInfoSize"
+        android:textStyle="bold"
+
+
+        />
+    <TextView
+        android:id="@+id/tv_latin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sniglet"
+
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+        android:paddingStart="@dimen/infoPaddingStart"
+        android:textSize="@dimen/infoSize"
+        android:paddingBottom="@dimen/infoPaddingBottom"
+
+
+        android:hint="latınce ısım"
+        android:textColor="@color/description_color"
+
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sniglet"
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+        android:text="Türkçe İsimleri"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/titleInfoSize"
+        android:textStyle="bold"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv_turkce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sniglet"
+
+        android:hint="turkce isimleri"
+
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+        android:paddingStart="@dimen/infoPaddingStart"
+        android:textSize="@dimen/infoSize"
+        android:paddingBottom="@dimen/infoPaddingBottom"
+
+
+        android:textColor="@color/description_color"
+
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sniglet"
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+        android:text="Büyüme Formu"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/titleInfoSize"
+        android:textStyle="bold"
+
+
+        />
+    <TextView
+        android:id="@+id/tv_buyumeFormu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sniglet"
+
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+        android:paddingStart="@dimen/infoPaddingStart"
+        android:textSize="@dimen/infoSize"
+        android:paddingBottom="@dimen/infoPaddingBottom"
+
+
+        android:hint="buyume formu"
+        android:textColor="@color/description_color"
+
+
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sniglet"
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+        android:text="Anavatanı"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/titleInfoSize"
+        android:textStyle="bold"
+
+
+        />
+    <TextView
+        android:id="@+id/tv_anavatani"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sniglet"
+
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+        android:paddingStart="@dimen/infoPaddingStart"
+        android:textSize="@dimen/infoSize"
+        android:paddingBottom="@dimen/infoPaddingBottom"
+
+
+        android:hint="anavatani bilgisi mevcut değil :("
+        android:textColor="@color/description_color"
+
+
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sniglet"
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+        android:text="Yetiştiği Bölge"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/titleInfoSize"
+        android:textStyle="bold"
+
+
+        />
+    <TextView
+        android:id="@+id/tv_yetistigiBolge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sniglet"
+
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+        android:paddingStart="@dimen/infoPaddingStart"
+        android:textSize="@dimen/infoSize"
+        android:paddingBottom="@dimen/infoPaddingBottom"
+
+
+        android:hint="yetistigi bölge bilgisi mevcut değil :("
+        android:textColor="@color/description_color"
+
+
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sniglet"
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+        android:text="Ailesi"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/titleInfoSize"
+        android:textStyle="bold"
+
+
+        />
+    <TextView
+        android:id="@+id/tv_ailesi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sniglet"
+
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+        android:paddingStart="@dimen/infoPaddingStart"
+        android:textSize="@dimen/infoSize"
+        android:paddingBottom="@dimen/infoPaddingBottom"
+
+
+        android:hint="ailesi bilgisi mevcut değil :("
+        android:textColor="@color/description_color"
+
+
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sniglet"
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+        android:text="Notlar"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/titleInfoSize"
+        android:textStyle="bold"
+
+
+        />
+    <TextView
+        android:id="@+id/tv_genelNotlar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sniglet"
+
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+        android:paddingStart="@dimen/infoPaddingStart"
+        android:textSize="@dimen/infoSize"
+        android:paddingBottom="@dimen/infoPaddingBottom"
+
+
+        android:hint="genel notlar bilgisi mevcut değil :("
+        android:textColor="@color/description_color"
+
+
+        />
+    </LinearLayout>
+
+</ScrollView>
+

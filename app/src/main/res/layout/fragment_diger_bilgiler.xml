@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/scrollViewPadding"
+    android:layout_margin="@dimen/scrollViewMargin"
+    tools:context="com.example.bitki_bilgi_sistemi.TableFragments.DigerBilgilerFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sniglet"
+            android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+            android:text="Büyüme Hızı"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/titleInfoSize"
+            android:textStyle="bold"
+
+
+            />
+        <TextView
+            android:id="@+id/tv_buyumeHizi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sniglet"
+
+            android:lineSpacingExtra="@dimen/lineSpacingExtra"
+            android:paddingStart="@dimen/infoPaddingStart"
+            android:textSize="@dimen/infoSize"
+            android:paddingBottom="@dimen/infoPaddingBottom"
+
+            android:hint="büyüme hızı bilgisi mevcut değil :("
+            android:textColor="@color/description_color"
+
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sniglet"
+            android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+            android:text="Bakım İhtiyacı"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/titleInfoSize"
+            android:textStyle="bold"
+
+
+            />
+
+        <TextView
+            android:id="@+id/tv_bakimIhtiyaci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sniglet"
+
+            android:hint="bakım ihtiyacı bilgisi mevcut değil :("
+
+            android:lineSpacingExtra="@dimen/lineSpacingExtra"
+            android:paddingStart="@dimen/infoPaddingStart"
+            android:textSize="@dimen/infoSize"
+            android:paddingBottom="@dimen/infoPaddingBottom"
+
+
+            android:textColor="@color/description_color"
+
+             />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sniglet"
+            android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+            android:text="Zehirlilik"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/titleInfoSize"
+            android:textStyle="bold"
+
+
+            />
+        <TextView
+            android:id="@+id/tv_zehirlilik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sniglet"
+
+            android:lineSpacingExtra="@dimen/lineSpacingExtra"
+            android:paddingStart="@dimen/infoPaddingStart"
+            android:textSize="@dimen/infoSize"
+            android:paddingBottom="@dimen/infoPaddingBottom"
+
+
+            android:hint="zehirlilik bilgisi mevcut değil :("
+            android:textColor="@color/description_color"
+
+
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sniglet"
+            android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+            android:text="Üretimi"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/titleInfoSize"
+            android:textStyle="bold"
+
+
+            />
+        <TextView
+            android:id="@+id/tv_uretimi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sniglet"
+
+            android:lineSpacingExtra="@dimen/lineSpacingExtra"
+            android:paddingStart="@dimen/infoPaddingStart"
+            android:textSize="@dimen/infoSize"
+            android:paddingBottom="@dimen/infoPaddingBottom"
+
+
+            android:hint="üretim bilgisi mevcut değil :("
+            android:textColor="@color/description_color"
+
+
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
+

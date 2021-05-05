@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/scrollViewPadding"
+        android:layout_margin="@dimen/scrollViewMargin"
+    tools:context="com.example.bitki_bilgi_sistemi.TableFragments.CicekFragment">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/sniglet"
+                android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+                android:text="Çiçek Durumu"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/titleInfoSize"
+                android:textStyle="bold"
+
+
+                />
+            <TextView
+                android:id="@+id/tv_cicekDurumu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/sniglet"
+                android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+                android:paddingStart="@dimen/infoPaddingStart"
+
+                android:hint="çiçek durumu bilgisi mevcut değil :("
+                android:textColor="@color/description_color"
+                android:textSize="@dimen/infoSize"
+                android:paddingBottom="@dimen/infoPaddingBottom"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/sniglet"
+                android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+                android:text="Çiçek Büyüklüğü"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/titleInfoSize"
+                android:textStyle="bold"
+
+
+                />
+
+            <TextView
+                android:id="@+id/tv_cicekBuyuklugu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/sniglet"
+
+                android:hint="çiçek büyülüğü bilgisi mevcut değil :("
+                android:lineSpacingExtra="@dimen/lineSpacingExtra"
+                android:paddingStart="@dimen/infoPaddingStart"
+                android:paddingBottom="@dimen/infoPaddingBottom"
+                android:textColor="@color/description_color"
+
+                android:textSize="@dimen/infoSize" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/sniglet"
+                android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+                android:text="Çiçek Kokusu"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/titleInfoSize"
+                android:textStyle="bold"
+
+
+                />
+            <TextView
+                android:id="@+id/tv_cicekKokusu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/sniglet"
+                android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+                android:paddingStart="@dimen/infoPaddingStart"
+                android:hint="çiçek kokusu bilgisi mevcut değil :("
+                android:textColor="@color/description_color"
+                android:textSize="@dimen/infoSize"
+                android:paddingBottom="@dimen/infoPaddingBottom"
+
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/sniglet"
+                android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+                android:text="Çiçek Rengi"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/titleInfoSize"
+                android:textStyle="bold"
+
+
+                />
+            <TextView
+                android:id="@+id/tv_cicekRengi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/sniglet"
+                android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+                android:paddingStart="@dimen/infoPaddingStart"
+                android:hint="çiçek rengi bilgisi mevcut değil :("
+                android:textColor="@color/description_color"
+                android:textSize="@dimen/infoSize"
+                android:paddingBottom="@dimen/infoPaddingBottom"
+
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/sniglet"
+                android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+                android:text="Çiçeklenme Zamanı"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/titleInfoSize"
+                android:textStyle="bold"
+
+
+                />
+            <TextView
+                android:id="@+id/tv_ciceklenmeZamani"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/sniglet"
+                android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+                android:paddingStart="@dimen/infoPaddingStart"
+                android:hint="çiçeklenme zamanı bilgisi mevcut değil :("
+                android:textColor="@color/description_color"
+                android:textSize="@dimen/infoSize"
+                android:paddingBottom="@dimen/infoPaddingBottom"
+
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/sniglet"
+                android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+                android:text="Çiçek Hakkında Notlar"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/titleInfoSize"
+                android:textStyle="bold"
+
+
+                />
+            <TextView
+                android:id="@+id/tv_cicekNotlar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/sniglet"
+                android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+                android:paddingStart="@dimen/infoPaddingStart"
+                android:hint="çiçek hakkında not bilgisi mevcut değil :("
+                android:textColor="@color/description_color"
+                android:textSize="@dimen/infoSize"
+                android:paddingBottom="@dimen/infoPaddingBottom"
+
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
