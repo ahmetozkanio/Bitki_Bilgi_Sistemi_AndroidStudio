@@ -10,6 +10,7 @@ public class Cicek {
     private String cicekNotlar;
 
     public Cicek() {
+
     }
 
     public Cicek(int id, String cicekDurumu, String cicekBuyuklugu, String cicekKokusu, String cicekRengi, String ciceklenmeZamani, String cicekNotlar) {
