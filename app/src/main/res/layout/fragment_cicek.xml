@@ -39,7 +39,7 @@
                 android:lineSpacingExtra="@dimen/lineSpacingExtra"
 
                 android:paddingStart="@dimen/infoPaddingStart"
-
+                android:paddingTop="@dimen/infoPaddingTop"
                 android:hint="çiçek durumu bilgisi mevcut değil :("
                 android:textColor="@color/description_color"
                 android:textSize="@dimen/infoSize"
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
 
                 android:fontFamily="@font/sniglet"
-
+                android:paddingTop="@dimen/infoPaddingTop"
                 android:hint="çiçek büyülüğü bilgisi mevcut değil :("
                 android:lineSpacingExtra="@dimen/lineSpacingExtra"
                 android:paddingStart="@dimen/infoPaddingStart"
@@ -104,7 +104,7 @@
                 android:textColor="@color/description_color"
                 android:textSize="@dimen/infoSize"
                 android:paddingBottom="@dimen/infoPaddingBottom"
-
+                android:paddingTop="@dimen/infoPaddingTop"
                 />
             <TextView
 
@@ -125,7 +125,7 @@
                 android:id="@+id/tv_cicekRengi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:paddingTop="@dimen/infoPaddingTop"
                 android:fontFamily="@font/sniglet"
                 android:lineSpacingExtra="@dimen/lineSpacingExtra"
 
@@ -158,7 +158,7 @@
 
                 android:fontFamily="@font/sniglet"
                 android:lineSpacingExtra="@dimen/lineSpacingExtra"
-
+                android:paddingTop="@dimen/infoPaddingTop"
                 android:paddingStart="@dimen/infoPaddingStart"
                 android:hint="çiçeklenme zamanı bilgisi mevcut değil :("
                 android:textColor="@color/description_color"
@@ -185,7 +185,7 @@
                 android:id="@+id/tv_cicekNotlar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:paddingTop="@dimen/infoPaddingTop"
                 android:fontFamily="@font/sniglet"
                 android:lineSpacingExtra="@dimen/lineSpacingExtra"
 

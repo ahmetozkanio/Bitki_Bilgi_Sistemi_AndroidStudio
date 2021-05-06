@@ -1,5 +1,6 @@
 package com.example.bitki_bilgi_sistemi.TableFragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,11 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.bitki_bilgi_sistemi.Activities.BilgiActivity;
 import com.example.bitki_bilgi_sistemi.R;
 
 
 public class CicekFragment extends Fragment {
-
 
     TextView cicekDurumu,cicekBuyuklugu,cicekKokusu,
                 cicekRengi,ciceklenmeZamani,cicekNotlar;
@@ -35,6 +36,9 @@ public class CicekFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_cicek, container, false);
 
+
+
+
     }
 
     @Override
@@ -48,7 +52,13 @@ public class CicekFragment extends Fragment {
         ciceklenmeZamani = view.findViewById(R.id.tv_ciceklenmeZamani);
         cicekNotlar = view.findViewById(R.id.tv_cicekNotlar);
 
-
+        Intent intent = getActivity().getIntent();
+        cicekDurumu.setText(intent.getStringExtra("cicekDurumu"));
+        cicekBuyuklugu.setText(intent.getStringExtra("cicekBuyuklugu"));
+        cicekKokusu.setText(intent.getStringExtra("cicekKokusu"));
+        cicekRengi.setText(intent.getStringExtra("cicekRengi"));
+        ciceklenmeZamani.setText(intent.getStringExtra("ciceklenmeZamani"));
+        cicekNotlar.setText(intent.getStringExtra("cicekNotlar"));
 
     }
 }

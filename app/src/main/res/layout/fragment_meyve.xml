@@ -6,12 +6,14 @@
     android:layout_height="wrap_content"
     android:padding="@dimen/scrollViewPadding"
     android:layout_margin="@dimen/scrollViewMargin"
-    tools:context="com.example.bitki_bilgi_sistemi.TableFragments.DigerBilgilerFragment">
 
+
+
+    tools:context="com.example.bitki_bilgi_sistemi.TableFragments.MeyveFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         >
 
@@ -23,7 +25,7 @@
             android:fontFamily="@font/sniglet"
             android:lineSpacingExtra="@dimen/lineSpacingExtra"
 
-            android:text="Büyüme Hızı"
+            android:text="Meyve Durumu"
             android:textColor="@color/title_color"
             android:textSize="@dimen/titleInfoSize"
             android:textStyle="bold"
@@ -31,18 +33,19 @@
 
             />
         <TextView
-            android:id="@+id/tv_buyumeHizi"
+            android:id="@+id/tv_meyveDurumu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
             android:fontFamily="@font/sniglet"
-            android:paddingTop="@dimen/infoPaddingTop"
+
             android:lineSpacingExtra="@dimen/lineSpacingExtra"
             android:paddingStart="@dimen/infoPaddingStart"
             android:textSize="@dimen/infoSize"
             android:paddingBottom="@dimen/infoPaddingBottom"
+            android:paddingTop="@dimen/infoPaddingTop"
 
-            android:hint="büyüme hızı bilgisi mevcut değil :("
+            android:hint="meyve durumu bilgisi mevcut değil :("
             android:textColor="@color/description_color"
 
             />
@@ -54,7 +57,7 @@
             android:fontFamily="@font/sniglet"
             android:lineSpacingExtra="@dimen/lineSpacingExtra"
 
-            android:text="Bakım İhtiyacı"
+            android:text="Meyve Tipi"
             android:textColor="@color/title_color"
             android:textSize="@dimen/titleInfoSize"
             android:textStyle="bold"
@@ -63,14 +66,14 @@
             />
 
         <TextView
-            android:id="@+id/tv_bakimIhtiyaci"
+            android:id="@+id/tv_meyveTipi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
             android:fontFamily="@font/sniglet"
-            android:paddingTop="@dimen/infoPaddingTop"
-            android:hint="bakım ihtiyacı bilgisi mevcut değil :("
 
+            android:hint="meyve tipi bilgisi mevcut değil :("
+            android:paddingTop="@dimen/infoPaddingTop"
             android:lineSpacingExtra="@dimen/lineSpacingExtra"
             android:paddingStart="@dimen/infoPaddingStart"
             android:textSize="@dimen/infoSize"
@@ -79,7 +82,7 @@
 
             android:textColor="@color/description_color"
 
-             />
+            />
 
         <TextView
 
@@ -89,7 +92,7 @@
             android:fontFamily="@font/sniglet"
             android:lineSpacingExtra="@dimen/lineSpacingExtra"
 
-            android:text="Zehirlilik"
+            android:text="Meyve Büyüklüğü"
             android:textColor="@color/title_color"
             android:textSize="@dimen/titleInfoSize"
             android:textStyle="bold"
@@ -97,19 +100,19 @@
 
             />
         <TextView
-            android:id="@+id/tv_zehirlilik"
+            android:id="@+id/tv_meyveBuyuklugu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
             android:fontFamily="@font/sniglet"
-            android:paddingTop="@dimen/infoPaddingTop"
+
             android:lineSpacingExtra="@dimen/lineSpacingExtra"
             android:paddingStart="@dimen/infoPaddingStart"
             android:textSize="@dimen/infoSize"
             android:paddingBottom="@dimen/infoPaddingBottom"
+            android:paddingTop="@dimen/infoPaddingTop"
 
-
-            android:hint="zehirlilik bilgisi mevcut değil :("
+            android:hint="meyve büyüklüğü bilgisi mevcut değil :("
             android:textColor="@color/description_color"
 
 
@@ -122,7 +125,7 @@
             android:fontFamily="@font/sniglet"
             android:lineSpacingExtra="@dimen/lineSpacingExtra"
 
-            android:text="Üretimi"
+            android:text="Meyve Rengi"
             android:textColor="@color/title_color"
             android:textSize="@dimen/titleInfoSize"
             android:textStyle="bold"
@@ -130,25 +133,86 @@
 
             />
         <TextView
-            android:id="@+id/tv_uretimi"
+            android:id="@+id/tv_meyveRengi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
             android:fontFamily="@font/sniglet"
-            android:paddingTop="@dimen/infoPaddingTop"
+
             android:lineSpacingExtra="@dimen/lineSpacingExtra"
             android:paddingStart="@dimen/infoPaddingStart"
             android:textSize="@dimen/infoSize"
             android:paddingBottom="@dimen/infoPaddingBottom"
+            android:paddingTop="@dimen/infoPaddingTop"
 
-
-            android:hint="üretim bilgisi mevcut değil :("
+            android:hint="meyve rengi bilgisi mevcut değil :("
             android:textColor="@color/description_color"
 
 
             />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sniglet"
+            android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+            android:text="Meyve Yenilebilirliği"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/titleInfoSize"
+            android:textStyle="bold"
 
 
+            />
+        <TextView
+            android:id="@+id/tv_meyveYenilebilirlik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sniglet"
+
+            android:lineSpacingExtra="@dimen/lineSpacingExtra"
+            android:paddingStart="@dimen/infoPaddingStart"
+            android:textSize="@dimen/infoSize"
+            android:paddingBottom="@dimen/infoPaddingBottom"
+            android:paddingTop="@dimen/infoPaddingTop"
+
+            android:hint="meyve yenilebilirlik bilgisi mevcut değil :("
+            android:textColor="@color/description_color"
+
+
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sniglet"
+            android:lineSpacingExtra="@dimen/lineSpacingExtra"
+
+            android:text="Meyve Zamanı"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/titleInfoSize"
+            android:textStyle="bold"
+
+
+            />
+        <TextView
+            android:id="@+id/tv_meyveZamani"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sniglet"
+
+            android:lineSpacingExtra="@dimen/lineSpacingExtra"
+            android:paddingStart="@dimen/infoPaddingStart"
+            android:textSize="@dimen/infoSize"
+            android:paddingBottom="@dimen/infoPaddingBottom"
+            android:paddingTop="@dimen/infoPaddingTop"
+
+            android:hint="meyve zamanı bilgisi mevcut değil :("
+            android:textColor="@color/description_color" />
     </LinearLayout>
 
 </ScrollView>

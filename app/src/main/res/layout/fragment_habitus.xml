@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
 
         android:fontFamily="@font/sniglet"
-
+        android:paddingTop="@dimen/infoPaddingTop"
         android:lineSpacingExtra="@dimen/lineSpacingExtra"
         android:paddingStart="@dimen/infoPaddingStart"
         android:textSize="@dimen/infoSize"
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
 
         android:fontFamily="@font/sniglet"
-
+        android:paddingTop="@dimen/infoPaddingTop"
         android:hint="boyu bilgisi mevcut değil :("
 
         android:lineSpacingExtra="@dimen/lineSpacingExtra"
@@ -106,7 +106,7 @@
         android:layout_height="wrap_content"
 
         android:fontFamily="@font/sniglet"
-
+        android:paddingTop="@dimen/infoPaddingTop"
         android:lineSpacingExtra="@dimen/lineSpacingExtra"
         android:paddingStart="@dimen/infoPaddingStart"
         android:textSize="@dimen/infoSize"
@@ -139,7 +139,7 @@
         android:layout_height="wrap_content"
 
         android:fontFamily="@font/sniglet"
-
+        android:paddingTop="@dimen/infoPaddingTop"
         android:lineSpacingExtra="@dimen/lineSpacingExtra"
         android:paddingStart="@dimen/infoPaddingStart"
         android:textSize="@dimen/infoSize"
@@ -172,7 +172,7 @@
         android:layout_height="wrap_content"
 
         android:fontFamily="@font/sniglet"
-
+        android:paddingTop="@dimen/infoPaddingTop"
         android:lineSpacingExtra="@dimen/lineSpacingExtra"
         android:paddingStart="@dimen/infoPaddingStart"
         android:textSize="@dimen/infoSize"

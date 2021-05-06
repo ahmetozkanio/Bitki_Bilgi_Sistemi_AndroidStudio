@@ -15,38 +15,36 @@ import android.widget.TextView;
 import com.example.bitki_bilgi_sistemi.R;
 
 
-public class DigerBilgilerFragment extends Fragment {
+public class KullanimAmaciFragment extends Fragment {
 
-    TextView buyumeHizi,bakimIhtiyaci,zehirlilik,uretimi;
+    TextView muhendislik , mimarlik,ek;
 
+    public KullanimAmaciFragment() {
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_diger_bilgiler, container, false);
+        return inflater.inflate(R.layout.fragment_kullanim_amaci, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        buyumeHizi = view.findViewById(R.id.tv_buyumeHizi);
-        bakimIhtiyaci = view.findViewById(R.id.tv_bakimIhtiyaci);
-        zehirlilik = view.findViewById(R.id.tv_zehirlilik);
-        uretimi = view.findViewById(R.id.tv_uretimi);
+        muhendislik = view.findViewById(R.id.tv_muhendislikIslevi);
+        mimarlik = view.findViewById(R.id.tv_mimarlikIslevi);
+        ek = view.findViewById(R.id.tv_ekOzellikler);
 
         Intent intent = getActivity().getIntent();
-        buyumeHizi.setText(intent.getStringExtra("buyumeHizi"));
-        bakimIhtiyaci.setText(intent.getStringExtra("bakimIhtiyaci"));
-        zehirlilik.setText(intent.getStringExtra("zehirlilik"));
-        uretimi.setText(intent.getStringExtra("uretim"));
+        muhendislik.setText(intent.getStringExtra("muhendislik"));
+        mimarlik.setText(intent.getStringExtra("mimarlik"));
+        ek.setText(intent.getStringExtra("ekOzellik"));
 
 
     }

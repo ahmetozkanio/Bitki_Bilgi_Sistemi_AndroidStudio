@@ -1,8 +1,8 @@
 package com.example.bitki_bilgi_sistemi.Manager;
 
 public class Cicek {
-    private int id ;
-    private String cicekDurumu ;
+    private int id;
+    private String cicekDurumu;
     private String cicekBuyuklugu;
     private String cicekKokusu;
     private String cicekRengi;

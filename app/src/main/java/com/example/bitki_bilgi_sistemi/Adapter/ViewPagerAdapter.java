@@ -6,8 +6,15 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
+import com.example.bitki_bilgi_sistemi.TableFragments.CicekFragment;
+import com.example.bitki_bilgi_sistemi.TableFragments.DigerBilgilerFragment;
 import com.example.bitki_bilgi_sistemi.TableFragments.GenelFragment;
 import com.example.bitki_bilgi_sistemi.TableFragments.HabitusFragment;
+import com.example.bitki_bilgi_sistemi.TableFragments.KullanimAlanlariFragment;
+import com.example.bitki_bilgi_sistemi.TableFragments.KullanimAmaciFragment;
+import com.example.bitki_bilgi_sistemi.TableFragments.MeyveFragment;
+import com.example.bitki_bilgi_sistemi.TableFragments.YaprakFragment;
+import com.example.bitki_bilgi_sistemi.TableFragments.YetismeIstegiFragment;
 
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
@@ -26,21 +33,21 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
             case 1:
                 return new HabitusFragment();
             case 2:
-                return new GenelFragment();
+                return new CicekFragment();
             case 3:
-                return new HabitusFragment();
+                return new CicekFragment();
             case 4:
-                return new GenelFragment();
+                return new YaprakFragment();
             case 5:
-                return new HabitusFragment();
+                return new MeyveFragment();
             case 6:
-                return new GenelFragment();
+                return new KullanimAlanlariFragment();
             case 7:
-                return new HabitusFragment();
+                return new KullanimAmaciFragment();
             case 8:
-                return new HabitusFragment();
+                return new YetismeIstegiFragment();
             case 9:
-                return new HabitusFragment();
+                return new DigerBilgilerFragment();
             default:
                 return new GenelFragment();
 
@@ -95,4 +102,5 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
     public int getCount() {
         return 10;  //kac tane view olusturulacak onun sayisi
     }
+
 }

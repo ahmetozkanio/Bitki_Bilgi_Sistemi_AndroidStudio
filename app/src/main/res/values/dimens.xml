@@ -5,4 +5,22 @@
     <dimen name="appbar_padding">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
+
+<!--Text Size -->
+<dimen name="titleInfoSize">16sp</dimen>
+<dimen name="infoSize">16sp</dimen>
+<dimen name="lineSpacingExtra">3sp</dimen>
+<!--Text Padding -->
+    <dimen name="infoPaddingTop">8dp</dimen>
+    <dimen name="infoPaddingBottom">15dp</dimen>
+    <dimen name="infoPaddingStart">25dp</dimen>
+
+
+<!--Text Margin -->
+
+<!--ScrollView -->
+<dimen name="scrollViewMargin">5dp</dimen>
+<dimen name="scrollViewPadding">5dp</dimen>
+
+
 </resources>

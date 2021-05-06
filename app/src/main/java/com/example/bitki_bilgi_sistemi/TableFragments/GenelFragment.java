@@ -53,7 +53,6 @@ public class GenelFragment extends Fragment {
         ailesi = view.findViewById(R.id.tv_ailesi);
         notlar = view.findViewById(R.id.tv_genelNotlar);
 
-     //  databaseHelper = new DatabaseHelper(context,"plant");
 
     Intent intent = getActivity().getIntent();
         latinName.setText(intent.getStringExtra("latinName"));

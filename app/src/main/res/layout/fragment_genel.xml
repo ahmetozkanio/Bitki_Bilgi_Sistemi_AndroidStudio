@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
 
         android:fontFamily="@font/sniglet"
-
+        android:paddingTop="@dimen/infoPaddingTop"
         android:lineSpacingExtra="@dimen/lineSpacingExtra"
         android:paddingStart="@dimen/infoPaddingStart"
         android:textSize="@dimen/infoSize"
@@ -71,7 +71,7 @@
         android:id="@+id/tv_turkce"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:paddingTop="@dimen/infoPaddingTop"
         android:fontFamily="@font/sniglet"
 
         android:hint="turkce isimleri"
@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
 
         android:fontFamily="@font/sniglet"
-
+        android:paddingTop="@dimen/infoPaddingTop"
         android:lineSpacingExtra="@dimen/lineSpacingExtra"
         android:paddingStart="@dimen/infoPaddingStart"
         android:textSize="@dimen/infoSize"
@@ -140,7 +140,7 @@
         android:layout_height="wrap_content"
 
         android:fontFamily="@font/sniglet"
-
+        android:paddingTop="@dimen/infoPaddingTop"
         android:lineSpacingExtra="@dimen/lineSpacingExtra"
         android:paddingStart="@dimen/infoPaddingStart"
         android:textSize="@dimen/infoSize"
@@ -173,7 +173,7 @@
         android:layout_height="wrap_content"
 
         android:fontFamily="@font/sniglet"
-
+        android:paddingTop="@dimen/infoPaddingTop"
         android:lineSpacingExtra="@dimen/lineSpacingExtra"
         android:paddingStart="@dimen/infoPaddingStart"
         android:textSize="@dimen/infoSize"
@@ -206,7 +206,7 @@
         android:layout_height="wrap_content"
 
         android:fontFamily="@font/sniglet"
-
+        android:paddingTop="@dimen/infoPaddingTop"
         android:lineSpacingExtra="@dimen/lineSpacingExtra"
         android:paddingStart="@dimen/infoPaddingStart"
         android:textSize="@dimen/infoSize"
@@ -237,7 +237,7 @@
         android:id="@+id/tv_genelNotlar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:paddingTop="@dimen/infoPaddingTop"
         android:fontFamily="@font/sniglet"
 
         android:lineSpacingExtra="@dimen/lineSpacingExtra"
