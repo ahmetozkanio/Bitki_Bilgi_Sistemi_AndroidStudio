@@ -48,8 +48,8 @@ public class MeyveFragment extends Fragment {
 
         Intent intent = getActivity().getIntent();
         meyveDurumu.setText(intent.getStringExtra("meyveDurumu"));
-        meyveBuyuklugu.setText(intent.getStringExtra("meyveTipi"));
-        meyveTipi.setText(intent.getStringExtra("meyveBuyuklugu"));
+        meyveBuyuklugu.setText(intent.getStringExtra("meyveBuyuklugu"));
+        meyveTipi.setText(intent.getStringExtra("meyveTipi"));
         meyveRengi.setText(intent.getStringExtra("meyveRengi"));
         meyveYenilebilirlik.setText(intent.getStringExtra("meyveYenilebilirligi"));
         meyveZamani.setText(intent.getStringExtra("meyveZamani"));

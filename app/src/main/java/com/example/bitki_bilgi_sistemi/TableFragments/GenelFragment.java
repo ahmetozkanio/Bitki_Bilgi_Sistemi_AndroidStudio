@@ -27,7 +27,7 @@ public class GenelFragment extends Fragment {
     anavatani,yetistigiBolge,ailesi,notlar;
 
 
-
+    Genel genel = new Genel();
 
 
     @Override
@@ -55,6 +55,9 @@ public class GenelFragment extends Fragment {
 
 
     Intent intent = getActivity().getIntent();
+
+
+
         latinName.setText(intent.getStringExtra("latinName"));
         turkceName.setText(intent.getStringExtra("turkishName"));
         buyumeFormu.setText(intent.getStringExtra("buyumeFormu"));
@@ -62,6 +65,7 @@ public class GenelFragment extends Fragment {
         yetistigiBolge.setText(intent.getStringExtra("yetistigiBolge"));
         ailesi.setText(intent.getStringExtra("ailesi"));
         notlar.setText(intent.getStringExtra("notlar"));
+
     }
 
 

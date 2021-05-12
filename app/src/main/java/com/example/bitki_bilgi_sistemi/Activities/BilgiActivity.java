@@ -1,6 +1,7 @@
 package com.example.bitki_bilgi_sistemi.Activities;
 
 
+import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,15 +12,13 @@ import android.view.View;
 
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
-import android.widget.Filter;
+
 import android.widget.ListView;
-import android.widget.SearchView;
+import android.widget.Toast;
 
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
+import androidx.appcompat.widget.SearchView;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -44,7 +43,7 @@ import com.example.bitki_bilgi_sistemi.Manager.Meyve;
 import com.example.bitki_bilgi_sistemi.Manager.Yaprak;
 import com.example.bitki_bilgi_sistemi.Manager.YetismeIstegi;
 import com.example.bitki_bilgi_sistemi.R;
-import com.google.android.material.internal.TextWatcherAdapter;
+
 
 
 public class BilgiActivity extends AppCompatActivity {
@@ -58,16 +57,24 @@ public class BilgiActivity extends AppCompatActivity {
     ArrayList<KullanimAmaci> kullanimAmaciArrayList = new ArrayList<KullanimAmaci>();
     ArrayList<DigerBilgiler> digerBilgilerArrayList = new ArrayList<DigerBilgiler>();
     ArrayList<YetismeIstegi> yetismeIstegiArrayList = new ArrayList<YetismeIstegi>();
-    ArrayList<LatinName> latinNameArrayList=new ArrayList<>();
 
 
+    ArrayList<Genel> latinName;
     DatabaseHelper myDBHELPER;
     ArrayAdapter adapter;
 
     Intent intent;
 
-    EditText search;
+    SearchView search;
     ListView listView;
+
+    //Sql search
+    String keyword ="";
+    boolean value =false;
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,7 +83,7 @@ public class BilgiActivity extends AppCompatActivity {
     //Bitkinin adini gostermek icin listview
         listView = findViewById(R.id.listVPlantName);
     //Search bar Listview Tanimlama
-        search= findViewById(R.id.search);
+        search= findViewById(R.id.search_bar);
 
     //Fragrment Bilgilerine gitmek icin intent
     intent = new Intent(BilgiActivity.this,MainActivity.class);
@@ -96,30 +103,35 @@ public class BilgiActivity extends AppCompatActivity {
 
 
   //Genel Tablosu ListView de gosterim ve fragment bilgi aktarimi icin
-   latinNameArrayList = myDBHELPER.latinNameList();
-   adapter = new GenelAdapter(latinNameArrayList);
+   genelArrayList = myDBHELPER.genelList(keyword,value);
+   adapter = new GenelAdapter(genelArrayList);
    adapter.notifyDataSetChanged();
    listView.setAdapter(adapter);
 
 
+   //Search kullanimi
+        search();
+
+
+
     //Genel Tablosu
-    genelArrayList = myDBHELPER.genelList();
+    genelArrayList = myDBHELPER.genelList(keyword,value);
     //Habitus Tablosu
-    habitusArrayList = myDBHELPER.habitusList();
+    habitusArrayList = myDBHELPER.habitusList(keyword,value);
     //Cicek Tablosu
-    cicekArrayList = myDBHELPER.cicekList();
+    cicekArrayList = myDBHELPER.cicekList(keyword,value);
     //Yaprak Tablosu
-    yaprakArrayList = myDBHELPER.yaprakList();
+    yaprakArrayList = myDBHELPER.yaprakList(keyword,value);
     //Meyve Tablosu
-    meyveArrayList = myDBHELPER.meyveList();
+    meyveArrayList = myDBHELPER.meyveList(keyword,value);
     //Kullanim Alanlari Tablosu
-    kullanimAlanlariArrayList = myDBHELPER.kullanimAlanlariList();
+    kullanimAlanlariArrayList = myDBHELPER.kullanimAlanlariList(keyword,value);
     //Kullanim Amaci Tablosu
-    kullanimAmaciArrayList = myDBHELPER.kullanimAmaciList();
+    kullanimAmaciArrayList = myDBHELPER.kullanimAmaciList(keyword,value);
     //Diger Bilgiler Tablosu
-    digerBilgilerArrayList = myDBHELPER.digerBilgilerList();
+    digerBilgilerArrayList = myDBHELPER.digerBilgilerList(keyword,value);
     //Yetisme Istegi Tablosu
-    yetismeIstegiArrayList = myDBHELPER.yetismeIstegiList();
+    yetismeIstegiArrayList = myDBHELPER.yetismeIstegiList(keyword,value);
 
 
 
@@ -134,7 +146,7 @@ public class BilgiActivity extends AppCompatActivity {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
             //Main Activity title
-            plantTitlePush(position);
+            plantTitlePush((int) id);
 
 
 
@@ -161,33 +173,53 @@ public class BilgiActivity extends AppCompatActivity {
         }
     });
 
-            //Search Bar listeleme
-            search.addTextChangedListener(new TextWatcher() {
-                @Override
-                public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+    }
 
-                }
+    public void search(){
+        SearchManager searchManager =(SearchManager) getSystemService(SEARCH_SERVICE);
+        search.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+        search.setSubmitButtonEnabled(true);
+        search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                searchListName(query);
+                return false;
+            }
 
-                @Override
-                public void onTextChanged(CharSequence s, int start, int before, int count) {
-                    (BilgiActivity.this).adapter.getFilter().filter(s);
-                }
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                searchListName(newText);
+                return false;
+            }
+        });
+    }
+    private  void searchListName(String keyword){
+        value =true;
+       latinName= myDBHELPER.searchList(keyword,value);
+        listView.clearTextFilter();
 
-                @Override
-                public void afterTextChanged(Editable s) {
-
-                }
-            });
-
-
-
-
-
+        if (latinName != null) {
+            listView.setAdapter(new GenelAdapter(latinName));
+            genelArrayList = myDBHELPER.genelList(keyword,value);
+            habitusArrayList = myDBHELPER.habitusList(keyword,value);
+            cicekArrayList = myDBHELPER.cicekList(keyword,value);
+            yaprakArrayList = myDBHELPER.yaprakList(keyword,value);
+            meyveArrayList = myDBHELPER.meyveList(keyword,value);
+            kullanimAlanlariArrayList = myDBHELPER.kullanimAlanlariList(keyword,value);
+            kullanimAmaciArrayList = myDBHELPER.kullanimAmaciList(keyword,value);
+            digerBilgilerArrayList = myDBHELPER.digerBilgilerList(keyword,value);
+            yetismeIstegiArrayList = myDBHELPER.yetismeIstegiList(keyword,value);
+        }
 
     }
 
-    public void plantTitlePush(int position){
-        intent.putExtra("plantTitle",genelArrayList.get(position).getLatinName());
+
+
+
+
+    public void plantTitlePush(int id){
+
+        intent.putExtra("plantTitle",genelArrayList.get(id).getLatinName());
 
     }
 

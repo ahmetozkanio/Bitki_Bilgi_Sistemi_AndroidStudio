@@ -20,6 +20,7 @@ import com.example.bitki_bilgi_sistemi.Manager.Yaprak;
 import com.example.bitki_bilgi_sistemi.Manager.YetismeIstegi;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
@@ -37,6 +38,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         DBNAME= dbNAME + ".sqlite";
         myContext = context;
     }
+
 
 
 
@@ -65,16 +67,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             myDatabase.close();
     }
 
-    public ArrayList<LatinName> latinNameList(){
-        LatinName latinName = null;
-        ArrayList<LatinName> nameArrayList = new ArrayList<>();
-        openDatabase();
+    public ArrayList<Genel> searchList(String keyword,boolean value){
+        Genel genel = null;
+        ArrayList<Genel> nameArrayList = new ArrayList<>();
 
-        Cursor cursor = myDatabase.rawQuery(sqlQuery.genelQuery(),null );
+        openDatabase();
+        Cursor cursor;
+        if (value)
+            cursor = myDatabase.rawQuery(sqlQuery.latinNameQuery(true), new String[] {"%"+keyword+"%"});
+        else
+            cursor = myDatabase.rawQuery(sqlQuery.latinNameQuery(false),null);
+
+
+
         cursor.moveToFirst();
         while (!cursor.isAfterLast()){
-            latinName = new LatinName(cursor.getString(1));
-            nameArrayList.add(latinName);
+            genel = new Genel(cursor.getInt(0),
+                    cursor.getString(1),
+                    cursor.getString(2),
+                    cursor.getString(3),
+                    cursor.getString(4),
+                    cursor.getString(5),
+                    cursor.getString(6),
+                    cursor.getString(7));
+            nameArrayList.add(genel);
             cursor.moveToNext();
         }
         cursor.close();
@@ -84,12 +100,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     //Genel Tablosu icin Veritabani Cekim ve Array List Ile Kullanim
-    public ArrayList<Genel> genelList(){
+    public ArrayList<Genel> genelList(String keyword,boolean value){
         Genel genel = null;
         ArrayList<Genel> genelArrayList = new ArrayList<Genel>();
         openDatabase();
-
-        Cursor cursor = myDatabase.rawQuery(sqlQuery.genelQuery(),null );
+Cursor cursor;
+        if (value)
+            cursor = myDatabase.rawQuery(sqlQuery.latinNameQuery(true), new String[] {"%"+keyword+"%"});
+        else
+            cursor = myDatabase.rawQuery(sqlQuery.latinNameQuery(false),null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()){
             genel = new Genel(cursor.getInt(0),
@@ -109,13 +128,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     //Habitus Tablosu icin Veritabani Cekim ve Array List Ile Kullanim
-    public ArrayList<Habitus> habitusList(){
+    public ArrayList<Habitus> habitusList(String keyword,boolean value){
 
         Habitus habitus = null;
         ArrayList<Habitus> habitusArrayList = new ArrayList<Habitus>();
 
         openDatabase();
-        Cursor cursor = myDatabase.rawQuery(sqlQuery.habitusQuery() ,null );
+        Cursor cursor;
+        if (value)
+            cursor = myDatabase.rawQuery(sqlQuery.habitusQuery(true), new String[] {"%"+keyword+"%"});
+        else
+            cursor = myDatabase.rawQuery(sqlQuery.habitusQuery(false),null);
         cursor.moveToFirst();
 
         while (!cursor.isAfterLast()){
@@ -134,12 +157,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return habitusArrayList;
     }
     //Cicek Tablosu icin Veritabani Cekim ve Array List e aktarim
-    public ArrayList<Cicek> cicekList(){
+    public ArrayList<Cicek> cicekList(String keyword,boolean value){
         Cicek cicek = null;
         ArrayList<Cicek> cicekArrayList = new ArrayList<Cicek>();
 
         openDatabase();
-        Cursor cursor = myDatabase.rawQuery(sqlQuery.cicekQuery() ,null );
+        Cursor cursor;
+        if (value)
+            cursor = myDatabase.rawQuery(sqlQuery.cicekQuery(true), new String[] {"%"+keyword+"%"});
+        else
+            cursor = myDatabase.rawQuery(sqlQuery.cicekQuery(false),null);
         cursor.moveToFirst();
 
         while (!cursor.isAfterLast()){
@@ -160,12 +187,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     //Yaprak Tablosu icin Veritabani Cekim ve Array List e aktarim
-    public ArrayList<Yaprak> yaprakList(){
+    public ArrayList<Yaprak> yaprakList(String keyword,boolean value){
         Yaprak yaprak = null;
         ArrayList<Yaprak> yaprakArrayList = new ArrayList<Yaprak>();
 
         openDatabase();
-        Cursor cursor = myDatabase.rawQuery(sqlQuery.yaprakQuery() ,null );
+        Cursor cursor;
+        if (value)
+            cursor = myDatabase.rawQuery(sqlQuery.yaprakQuery(true), new String[] {"%"+keyword+"%"});
+        else
+            cursor = myDatabase.rawQuery(sqlQuery.yaprakQuery(false),null);
         cursor.moveToFirst();
 
         while (!cursor.isAfterLast()){
@@ -190,12 +221,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     //Meyve Tablosu icin Veritabani Cekim ve Array List e aktarim
-    public ArrayList<Meyve> meyveList(){
+    public ArrayList<Meyve> meyveList(String keyword,boolean value){
         Meyve meyve = null;
         ArrayList<Meyve> meyveArrayList = new ArrayList<Meyve>();
 
         openDatabase();
-        Cursor cursor = myDatabase.rawQuery(sqlQuery.meyveQuery() ,null );
+        Cursor cursor;
+        if (value)
+            cursor = myDatabase.rawQuery(sqlQuery.meyveQuery(true), new String[] {"%"+keyword+"%"});
+        else
+            cursor = myDatabase.rawQuery(sqlQuery.meyveQuery(false),null);
         cursor.moveToFirst();
 
         while (!cursor.isAfterLast()){
@@ -215,12 +250,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return meyveArrayList;
     }
     //Kullanim Alanlari Tablosu icin Veritabani Cekim ve Array List e aktarim
-    public ArrayList<KullanimAlanlari> kullanimAlanlariList(){
+    public ArrayList<KullanimAlanlari> kullanimAlanlariList(String keyword,boolean value){
         KullanimAlanlari kullanimAlanlari = null;
         ArrayList<KullanimAlanlari> kullanimAlanlariArrayList = new ArrayList<KullanimAlanlari>();
 
         openDatabase();
-        Cursor cursor = myDatabase.rawQuery(sqlQuery.kullanimAlanlariQuery() ,null );
+        Cursor cursor;
+        if (value)
+            cursor = myDatabase.rawQuery(sqlQuery.kullanimAlanlariQuery(true), new String[] {"%"+keyword+"%"});
+        else
+            cursor = myDatabase.rawQuery(sqlQuery.kullanimAlanlariQuery(false),null);
         cursor.moveToFirst();
 
         while (!cursor.isAfterLast()){
@@ -239,12 +278,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return kullanimAlanlariArrayList;
     }
     //Kullanim Amaci Tablosu icin Veritabani Cekim ve Array List e aktarim
-    public ArrayList<KullanimAmaci> kullanimAmaciList(){
+    public ArrayList<KullanimAmaci> kullanimAmaciList(String keyword,boolean value){
         KullanimAmaci kullanimAmaci = null;
         ArrayList<KullanimAmaci> kullanimAmaciArrayList = new ArrayList<KullanimAmaci>();
 
         openDatabase();
-        Cursor cursor = myDatabase.rawQuery(sqlQuery.kullanimAmaciQuery() ,null );
+        Cursor cursor;
+        if (value)
+            cursor = myDatabase.rawQuery(sqlQuery.kullanimAmaciQuery(true), new String[] {"%"+keyword+"%"});
+        else
+            cursor = myDatabase.rawQuery(sqlQuery.kullanimAmaciQuery(false),null);
         cursor.moveToFirst();
 
         while (!cursor.isAfterLast()){
@@ -263,12 +306,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 
     //Diger Bilgiler Tablosu icin Veritabani Cekim ve Array List e aktarim
-    public ArrayList<DigerBilgiler> digerBilgilerList(){
+    public ArrayList<DigerBilgiler> digerBilgilerList(String keyword,boolean value){
         DigerBilgiler digerBilgiler = null;
         ArrayList<DigerBilgiler> digerBilgilerArrayList = new ArrayList<DigerBilgiler>();
 
         openDatabase();
-        Cursor cursor = myDatabase.rawQuery(sqlQuery.digerBilgilerQuery() ,null );
+        Cursor cursor;
+        if (value)
+            cursor = myDatabase.rawQuery(sqlQuery.digerBilgilerQuery(true), new String[] {"%"+keyword+"%"});
+        else
+            cursor = myDatabase.rawQuery(sqlQuery.digerBilgilerQuery(false),null);
         cursor.moveToFirst();
 
         while (!cursor.isAfterLast()){
@@ -286,12 +333,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return digerBilgilerArrayList;
     }
     //Yetisme Istegi Tablosu icin Veritabani Cekim ve Array List e aktarim
-    public ArrayList<YetismeIstegi> yetismeIstegiList(){
+    public ArrayList<YetismeIstegi> yetismeIstegiList(String keyword,boolean value){
         YetismeIstegi yetismeIstegi = null;
         ArrayList<YetismeIstegi> yetismeIstegiArrayList = new ArrayList<YetismeIstegi>();
 
         openDatabase();
-        Cursor cursor = myDatabase.rawQuery(sqlQuery.yetismeIstegiQuery() ,null );
+        Cursor cursor;
+        if (value)
+            cursor = myDatabase.rawQuery(sqlQuery.yetismeIstegiQuery(true), new String[] {"%"+keyword+"%"});
+        else
+            cursor = myDatabase.rawQuery(sqlQuery.yetismeIstegiQuery(false),null);
         cursor.moveToFirst();
 
         while (!cursor.isAfterLast()){

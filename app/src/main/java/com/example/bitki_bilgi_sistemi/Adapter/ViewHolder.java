@@ -18,8 +18,8 @@ public  class ViewHolder {
         textView = view.findViewById(R.id.tvPlantName);
 
     }
-    public void ListViewName(final ArrayAdapter<LatinName> adapter, final LatinName item , final int position){
-        textView.setText(item.getName()+position);
+    public void ListViewName(final ArrayAdapter<Genel> adapter, final Genel item , final int position){
+        textView.setText(item.getLatinName()+position);
     }
 
 }

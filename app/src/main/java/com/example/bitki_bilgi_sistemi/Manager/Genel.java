@@ -1,6 +1,8 @@
 package com.example.bitki_bilgi_sistemi.Manager;
 
-public class Genel {
+import java.io.Serializable;
+
+public class Genel implements Serializable {
     private int id;
     private String latinName;
     private String turkishName;

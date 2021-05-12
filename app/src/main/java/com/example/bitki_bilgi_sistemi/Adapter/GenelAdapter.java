@@ -1,6 +1,7 @@
 package com.example.bitki_bilgi_sistemi.Adapter;
 
 
+import android.app.SearchManager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -18,19 +19,19 @@ import com.example.bitki_bilgi_sistemi.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenelAdapter extends ArrayAdapter<LatinName> {
+public class GenelAdapter extends ArrayAdapter<Genel> {
 
-    BilgiActivity bilgiActivity = new BilgiActivity();
 
-    public  GenelAdapter(ArrayList<LatinName> latinNameArrayList){
-      super(ContextInflater.context, R.layout.plant_name_listview,latinNameArrayList);
+    public  GenelAdapter(ArrayList<Genel> genelArrayList){
+      super(ContextInflater.context, R.layout.plant_name_listview,genelArrayList);
   }
+
 
 
     @Override
     public View getView(int position , View convertView, ViewGroup parent){
         ViewHolder holder;
-        LatinName item = getItem(position);
+        Genel item = getItem(position);
         if (convertView ==null)
         {
             convertView = ContextInflater.inflater.inflate(R.layout.plant_name_listview,parent,false);
@@ -42,6 +43,7 @@ public class GenelAdapter extends ArrayAdapter<LatinName> {
         holder.ListViewName(this,item,position);
         return convertView;
     }
+
 
 
 }
