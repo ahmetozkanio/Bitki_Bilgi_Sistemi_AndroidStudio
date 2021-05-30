@@ -14,13 +14,14 @@
     <dimen name="infoPaddingTop">8dp</dimen>
     <dimen name="infoPaddingBottom">15dp</dimen>
     <dimen name="infoPaddingStart">25dp</dimen>
-
-
-<!--Text Margin -->
+    
 
 <!--ScrollView -->
 <dimen name="scrollViewMargin">5dp</dimen>
 <dimen name="scrollViewPadding">5dp</dimen>
 
 
+    
+
+    
 </resources>

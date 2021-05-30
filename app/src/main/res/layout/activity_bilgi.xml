@@ -19,21 +19,22 @@
         >
 
 
-<ImageView
-        android:id="@+id/back_icon"
-        android:layout_width="27dp"
-        android:layout_height="27dp"
-        android:layout_marginBottom="20dp"
-    android:layout_marginEnd="15dp"
-        android:src="@drawable/back_icon" />
-
-
+        <ImageButton
+            android:onClick="homeBackButton"
+            android:id="@+id/homeBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/back_icon"/>
 
         <androidx.appcompat.widget.SearchView
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="20dp"
          android:id="@+id/search_bar"
+
          app:queryHint="Bitki Arama"
          app:iconifiedByDefault="false"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
 
          android:background="@drawable/search_bar"
          android:layout_width="match_parent"

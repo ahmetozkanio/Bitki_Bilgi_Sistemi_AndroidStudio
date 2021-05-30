@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.bitki_bilgi_sistemi.Activities.BilgiActivity;
 import com.example.bitki_bilgi_sistemi.R;
 
 

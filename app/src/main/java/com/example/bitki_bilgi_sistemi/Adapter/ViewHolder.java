@@ -19,7 +19,7 @@ public  class ViewHolder {
 
     }
     public void ListViewName(final ArrayAdapter<Genel> adapter, final Genel item , final int position){
-        textView.setText(item.getLatinName()+position);
+        textView.setText(item.getLatinName());
     }
 
 }

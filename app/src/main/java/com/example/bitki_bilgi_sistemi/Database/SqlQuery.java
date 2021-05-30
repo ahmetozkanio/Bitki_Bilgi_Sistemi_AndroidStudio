@@ -53,7 +53,7 @@ public class SqlQuery{
         if (keyword)
         sql ="SELECT * FROM yaprak INNER JOIN genel ON yaprak.yaprak_id = genel.genel_id WHERE "+latince+"like ?"+orderBy;
         else
-        sql ="SELECT * FROM yaprak INNER JOIN genel ON yaprak.yaprak_id = genel.genel_id";
+        sql ="SELECT * FROM yaprak INNER JOIN genel ON yaprak.yaprak_id = genel.genel_id"+orderBy;
         return sql;
     }
     public String meyveQuery(boolean value){

@@ -6,6 +6,8 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.bitki_bilgi_sistemi.R;
@@ -17,10 +19,17 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager mViewPager;
 
     TextView plantName;
+    ImageButton listBack;
+    Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        listBack = findViewById(R.id.listBack);
+
 
         plantName = findViewById(R.id.title);
         Intent intent= getIntent();
@@ -42,6 +51,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    //************************************************************
+    //List Back button
+    public void listBackButton(View view){
+        intent = new Intent(MainActivity.this, ListActivity.class);
+        startActivity(intent);
+    }
+
+    //************************************************************
 
 
 

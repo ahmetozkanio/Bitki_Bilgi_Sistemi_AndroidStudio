@@ -6,15 +6,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-import android.text.Editable;
-import android.text.TextWatcher;
+
 import android.view.View;
 
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 
+import android.widget.ImageButton;
 import android.widget.ListView;
-import android.widget.Toast;
+
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,7 +26,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
-import java.util.List;
+
 
 
 import com.example.bitki_bilgi_sistemi.Adapter.GenelAdapter;
@@ -38,7 +38,6 @@ import com.example.bitki_bilgi_sistemi.Manager.Genel;
 import com.example.bitki_bilgi_sistemi.Manager.Habitus;
 import com.example.bitki_bilgi_sistemi.Manager.KullanimAlanlari;
 import com.example.bitki_bilgi_sistemi.Manager.KullanimAmaci;
-import com.example.bitki_bilgi_sistemi.Manager.LatinName;
 import com.example.bitki_bilgi_sistemi.Manager.Meyve;
 import com.example.bitki_bilgi_sistemi.Manager.Yaprak;
 import com.example.bitki_bilgi_sistemi.Manager.YetismeIstegi;
@@ -46,7 +45,7 @@ import com.example.bitki_bilgi_sistemi.R;
 
 
 
-public class BilgiActivity extends AppCompatActivity {
+public class ListActivity extends AppCompatActivity {
     //Modeller
     ArrayList<Genel> genelArrayList = new ArrayList<Genel>();
     ArrayList<Habitus> habitusArrayList = new ArrayList<Habitus>();
@@ -67,6 +66,8 @@ public class BilgiActivity extends AppCompatActivity {
 
     SearchView search;
     ListView listView;
+    ImageButton backIcon;
+
 
     //Sql search
     String keyword ="";
@@ -80,19 +81,21 @@ public class BilgiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bilgi);
 
+    //Back Button
+        backIcon = findViewById(R.id.homeBack);
     //Bitkinin adini gostermek icin listview
         listView = findViewById(R.id.listVPlantName);
     //Search bar Listview Tanimlama
         search= findViewById(R.id.search_bar);
 
     //Fragrment Bilgilerine gitmek icin intent
-    intent = new Intent(BilgiActivity.this,MainActivity.class);
+    intent = new Intent(ListActivity.this,MainActivity.class);
 
     //Veri tabani erisimi
-    myDBHELPER = new DatabaseHelper(BilgiActivity.this,"plant");
+    myDBHELPER = new DatabaseHelper(ListActivity.this,"plant");
     File database = getApplicationContext().getDatabasePath(DatabaseHelper.DBNAME);
    try { if (!database.exists()){ myDBHELPER.getReadableDatabase();
-        if (!copyDatabase(BilgiActivity.this)) { return; } }
+        if (!copyDatabase(ListActivity.this)) { return; } }
    } catch (IOException e) { e.printStackTrace(); }
 
 
@@ -175,9 +178,22 @@ public class BilgiActivity extends AppCompatActivity {
 
     }
 
+    //************************************************************
+    //Home Back button
+    public void homeBackButton(View view){
+        intent = new Intent(ListActivity.this,HomeActivity.class);
+        startActivity(intent);
+    }
+
+    //************************************************************
+
+
+
+
     public void search(){
         SearchManager searchManager =(SearchManager) getSystemService(SEARCH_SERVICE);
         search.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+
         search.setSubmitButtonEnabled(true);
         search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override

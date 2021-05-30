@@ -1,23 +1,15 @@
 package com.example.bitki_bilgi_sistemi.Adapter;
 
 
-import android.app.SearchManager;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Filter;
 
-import androidx.annotation.NonNull;
-
-import com.example.bitki_bilgi_sistemi.Activities.BilgiActivity;
 import com.example.bitki_bilgi_sistemi.ContextInflater;
-import com.example.bitki_bilgi_sistemi.Database.DatabaseHelper;
 import com.example.bitki_bilgi_sistemi.Manager.Genel;
-import com.example.bitki_bilgi_sistemi.Manager.LatinName;
 import com.example.bitki_bilgi_sistemi.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class GenelAdapter extends ArrayAdapter<Genel> {
 
