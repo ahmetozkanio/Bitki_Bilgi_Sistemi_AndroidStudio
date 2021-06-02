@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         listBack = findViewById(R.id.listBack);
-
-
         plantName = findViewById(R.id.title);
         Intent intent= getIntent();
         plantName.setText(intent.getStringExtra("plantTitle"));

@@ -35,18 +35,16 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
             case 2:
                 return new CicekFragment();
             case 3:
-                return new CicekFragment();
-            case 4:
                 return new YaprakFragment();
-            case 5:
+            case 4:
                 return new MeyveFragment();
-            case 6:
+            case 5:
                 return new KullanimAlanlariFragment();
-            case 7:
+            case 6:
                 return new KullanimAmaciFragment();
-            case 8:
+            case 7:
                 return new YetismeIstegiFragment();
-            case 9:
+            case 8:
                 return new DigerBilgilerFragment();
             default:
                 return new GenelFragment();
@@ -67,27 +65,24 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
                 title = "Habitus";
                 break;
             case 2:
-                title = "Görseller";
-                break;
-            case 3:
                 title = "Çiçek";
                 break;
-            case 4:
+            case 3:
                 title = "Yaprak";
                 break;
-            case 5:
+            case 4:
                 title = "Meyve";
                 break;
-            case 6:
+            case 5:
                 title = "Kullanım alanları";
                 break;
-            case 7:
+            case 6:
                 title = "Kullanım amacı";
                 break;
-            case 8:
+            case 7:
                 title = "Yetişme isteği";
                 break;
-            case 9:
+            case 8:
                 title = "Diğer bilgiler";
                 break;
         }
@@ -100,7 +95,7 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 10;  //kac tane view olusturulacak onun sayisi
+        return 9;  //kac tane view olusturulacak onun sayisi
     }
 
 }
