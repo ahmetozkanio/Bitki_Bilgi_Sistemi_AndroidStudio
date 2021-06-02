@@ -14,7 +14,7 @@ import com.example.bitki_bilgi_sistemi.R;
 import com.example.bitki_bilgi_sistemi.Adapter.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends AppCompatActivity {
+public class PlantInfoActivity extends AppCompatActivity {
     private TabLayout mTabLayout;
     private ViewPager mViewPager;
 
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_plant_info);
 
 
         listBack = findViewById(R.id.listBack);
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     //************************************************************
     //List Back button
     public void listBackButton(View view){
-        intent = new Intent(MainActivity.this, ListActivity.class);
+        intent = new Intent(PlantInfoActivity.this, ListActivity.class);
         startActivity(intent);
     }
 

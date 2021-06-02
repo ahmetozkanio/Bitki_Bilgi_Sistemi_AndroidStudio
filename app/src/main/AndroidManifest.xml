@@ -21,7 +21,7 @@
         <activity android:name=".Activities.ListActivity">
 
         </activity>
-        <activity android:name=".Activities.MainActivity"></activity>
+        <activity android:name=".Activities.PlantInfoActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

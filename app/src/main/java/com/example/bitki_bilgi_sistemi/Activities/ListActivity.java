@@ -89,7 +89,7 @@ public class ListActivity extends AppCompatActivity {
         search= findViewById(R.id.search_bar);
 
     //Fragrment Bilgilerine gitmek icin intent
-    intent = new Intent(ListActivity.this,MainActivity.class);
+    intent = new Intent(ListActivity.this, PlantInfoActivity.class);
 
     //Veri tabani erisimi
     myDBHELPER = new DatabaseHelper(ListActivity.this,"plant");
