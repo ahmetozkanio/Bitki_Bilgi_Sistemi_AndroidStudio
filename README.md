@@ -8,7 +8,7 @@ Uygulama 395 adet bitkinin bilgilerinin gösterildiği bir mobil projedir . Uygu
 
 -  [  **ÖZET** ](#ozet)
 
-- [  ** KULLANILAN TEKNOLOJİLER** ](#kullanilan-teknolojiler)
+- [  **KULLANILAN TEKNOLOJİLER** ](#kullanilan-teknolojiler)
 
 -  [  **HOME ACTIVITY** ](#home-activity)
 	1. Home Fragment 
