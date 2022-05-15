@@ -40,7 +40,7 @@ Uygulama 395 adet bitkinin bilgilerinin gösterildiği bir mobil projedir . Uygu
 <a name="ozet"></a>
 ## ÖZET
 
-Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn işlemleri Adobe Photoshop ve Xd proğramlarından faydalanılarak tasarlanmış olup xml ile uygulamada gösterilmiştir. Uygulama java opp prensiplerinde yazılmış olup son derece dinamik bir şekilde çalışmaktadır. Veri tabanındaki tablolar 9 tanedir ve bir bitkinin sahip olabileceği tüm bilgiler mevcuttur. Bunlar genel, habitus ,çiçek, yaprak ,meyve, kullanım alanları , kullanım amacı ,yetişme isteği ve diğer bilgiler olmak üzere 9 tane tablo yapısı bulunmaktadır. Fragment yapıları ve navigation yapısı kullanılmıştır. Bu sayede bilgilere erişim oldukça hızlıdır ve uygulama son derece akıcıdır.
+Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn işlemleri Adobe Photoshop ve Xd proğramlarından faydalanılarak tasarlanmış olup xml ile uygulamada gösterilmiştir. Uygulama java opp prensiplerinde yazıldi. Veri tabanındaki tablolar 9 tanedir ve bir bitkinin sahip olabileceği tüm bilgiler mevcuttur. Bunlar genel, habitus ,çiçek, yaprak ,meyve, kullanım alanları , kullanım amacı ,yetişme isteği ve diğer bilgiler olmak üzere 9 tane tablo yapısı bulunmaktadır. Fragment yapıları ve navigation yapısı kullanılmıştır. Bu sayede bilgilere erişim oldukça hızlıdır ve uygulama son derece akıcıdır.
 
 <a name="kullanilan-teknolojiler"></a>
 ## KULLANILAN TEKNOLOJİLER VE ARAÇLAR
