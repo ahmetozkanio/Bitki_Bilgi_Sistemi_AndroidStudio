@@ -76,7 +76,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 - Girilen metne göre latince ismin içinde geçmesi yeterli olacaktır bize direk o bitkiyi getiriyor.
 - Aynı şekilde listede herhangi bir bitkiye tıkladığımız da bize onun bilgilerini getiriyor.
 
-	<img src="./readme_images/lıst1.png" alt="list" width="200"/>
+
+<img src="./readme_images/lıst1.png" alt="list" width="200"/>
 
 <a name="plant-info-activity"></a>
 #### Plant Info Activity
@@ -92,7 +93,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 - Horizontal Scrool View içerisinde bu 9 tane tablo listelendi bunlar kaydırılarak geçilebiliyor.
 - Bunlara tıklandığında alt bölümde yine o tabloya ait fragmentlar bulunuyor. Fragmentlar 9 tane tablolara eş değer bir şekilde oluşturuldu. Bunun yanında Manager sınıflarıyla veriler OOP prensipleriyle dinamik olarak çekildi ve uygulamada gösterildi.
 
-	<img src="./readme_images/search.png" alt="search" width="200"/>
+
+<img src="./readme_images/search.png" alt="search" width="200"/>
 	
 #### Genel
 
@@ -117,7 +119,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	4. Bitkinin Dokusu
 	5. Habitus Hakkında Notlar
 	
-	<img src="./readme_images/habitus.png" alt="habitus" width="200"/>
+
+<img src="./readme_images/habitus.png" alt="habitus" width="200"/>
 	
 #### Çiçek
 
@@ -166,7 +169,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	4. Peyzaj Tarzı
 	5. Kullanıma İlişkin Notlar
 
-	<img src="./readme_images/kullanimalanlari.png" alt="kullanimalanlari" width="200"/>
+
+<img src="./readme_images/kullanimalanlari.png" alt="kullanimalanlari" width="200"/>
 
 #### Kullanım Amacı
 
@@ -175,7 +179,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	2. Bitkinin Mimarlık İşlevleri
 	3. Bitkinin Ek Özellikleri
 
-	<img src="./readme_images/kullanimamaci.png" alt="kullanimamaci" width="200"/>
+
+<img src="./readme_images/kullanimamaci.png" alt="kullanimamaci" width="200"/>
 	
 #### Yetişme İsteği
 
@@ -186,7 +191,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	4. Toprak İsteği
 	5. Toprak Drenajı
 
-	<img src="./readme_images/yetismeistegi.png" alt="yetismeistegi" width="200"/>
+
+<img src="./readme_images/yetismeistegi.png" alt="yetismeistegi" width="200"/>
 
 #### Diğer Bilgiler
 
@@ -196,6 +202,7 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	3. Zehirlilik
 	4. Üretimi
 
-	<img src="./readme_images/digerbilgiler.png" alt="digerbilgiler" width="200"/>
+
+<img src="./readme_images/digerbilgiler.png" alt="digerbilgiler" width="200"/>
 	
 	
