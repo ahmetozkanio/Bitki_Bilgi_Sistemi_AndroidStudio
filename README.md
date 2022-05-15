@@ -63,6 +63,7 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 - Qr kod butonu ise bitkilerin bilgileri göstermek için qr code okuyucu kameranın açılıp okunan bilgilere göre bitkinin gösterilmesi için düşünüldü . (Henüz aktif değil sebebi qr code bilgilerinin elime daha ulaşmaması.)
 - İnfo butonu ise uygulama hakkında bilgilerin gösterildiği butondur.
 
+	<img src="./readme_images/home1.png" alt="home" width="200"/>
 
 #### List Activity
 
@@ -77,6 +78,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 - Girilen metne göre latince ismin içinde geçmesi yeterli olacaktır bize direk o bitkiyi getiriyor.
 - Aynı şekilde listede herhangi bir bitkiye tıkladığımız da bize onun bilgilerini getiriyor.
 
+	<img src="./readme_images/list1.png" alt="list" width="200"/>
+
 #### Plant Info Activity
 
 - Burada örnek arama yaptığımızda ve Chorisia speciosa bitkisine tıkladığımızda bize Plant Info Activity
@@ -90,7 +93,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 - Horizontal Scrool View içerisinde bu 9 tane tablo listelendi bunlar kaydırılarak geçilebiliyor.
 - Bunlara tıklandığında alt bölümde yine o tabloya ait fragmentlar bulunuyor. Fragmentlar 9 tane tablolara eş değer bir şekilde oluşturuldu. Bunun yanında Manager sınıflarıyla veriler OOP prensipleriyle dinamik olarak çekildi ve uygulamada gösterildi.
 
-
+	<img src="./readme_images/search.png" alt="search" width="200"/>
+	
 #### Genel
 
 - Genel tablosunda fotoğraftaki örnek bitkideki bilgiler bulunuyor.
@@ -114,6 +118,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	4. Bitkinin Dokusu
 	5. Habitus Hakkında Notlar
 	
+	<img src="./readme_images/habitus.png" alt="habitus" width="200"/>
+	
 #### Çiçek
 
 - Çiçek bölümünde çiçek tablosunda bilgiler gösteriliyor.
@@ -122,6 +128,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	3. Çiçek Kokusu
 	4. Çiçek Rengi
 	5. Çiçeklenme Zamanı
+
+	<img src="./readme_images/cicek.png" alt="cicek" width="200"/>
 
 #### Yaprak
 
@@ -136,6 +144,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	8. Yaprak Güz Rengi
 	9. Yaprak Hakkında Notlar
 
+	<img src="./readme_images/yaprak.png" alt="yaprak" width="200"/>
+	
 #### Meyve
 
 - Meyve bölümüne geçtiğimizde burada meyveye ait bilgiler gösteriliyor.
@@ -146,6 +156,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	5. Meyve Yenilebilirliği
 	6. Meyve Zamanı
 
+	<img src="./readme_images/meyve.png" alt="meyve" width="200"/>
+	
 #### Kullanım Alanları
 
 - Kullanım Alanları bölümüne geçildiğinde bitkiye ait kullanım alanları bilgisi gözükmekte.
@@ -155,6 +167,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	4. Peyzaj Tarzı
 	5. Kullanıma İlişkin Notlar
 
+	<img src="./readme_images/kullanimalanlari.png" alt="kullanimalanlari" width="200"/>
+
 #### Kullanım Amacı
 
 - Kullanım amacında ise kullanım amacı bilgileri gözükmekte bunlar,
@@ -162,6 +176,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	2. Bitkinin Mimarlık İşlevleri
 	3. Bitkinin Ek Özellikleri
 
+	<img src="./readme_images/kullanimamaci.png" alt="kullanimamaci" width="200"/>
+	
 #### Yetişme İsteği
 
 - Yetişme isteği bölümüne tıklandığında bitkinin hangi şartlar altında yetişmek istediği bilgileri gözükmekte.
@@ -171,6 +187,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	4. Toprak İsteği
 	5. Toprak Drenajı
 
+	<img src="./readme_images/yetismeistegi.png" alt="yetismeistegi" width="200"/>
+
 #### Diğer Bilgiler
 
 - Diğer bilgiler bölümünde ise bitkinin diğer önemli olan özellikleri bulunuyor.
@@ -178,3 +196,7 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	2. Bakım İhtiyacı
 	3. Zehirlilik
 	4. Üretimi
+
+	<img src="./readme_images/digerbilgiler.png" alt="digerbilgiler" width="200"/>
+	
+	
