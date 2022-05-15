@@ -78,7 +78,7 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 - Girilen metne göre latince ismin içinde geçmesi yeterli olacaktır bize direk o bitkiyi getiriyor.
 - Aynı şekilde listede herhangi bir bitkiye tıkladığımız da bize onun bilgilerini getiriyor.
 
-	<img src="./readme_images/list1.png" alt="list" width="200"/>
+	<img src="./readme_images/lıst1.png" alt="list" width="200"/>
 
 #### Plant Info Activity
 
