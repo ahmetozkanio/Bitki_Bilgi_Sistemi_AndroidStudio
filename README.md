@@ -131,7 +131,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	4. Çiçek Rengi
 	5. Çiçeklenme Zamanı
 
-	<img src="./readme_images/cicek.png" alt="cicek" width="200"/>
+
+<img src="./readme_images/cicek.png" alt="cicek" width="200"/>
 
 #### Yaprak
 
@@ -146,7 +147,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	8. Yaprak Güz Rengi
 	9. Yaprak Hakkında Notlar
 
-	<img src="./readme_images/yaprak.png" alt="yaprak" width="200"/>
+
+<img src="./readme_images/yaprak.png" alt="yaprak" width="200"/>
 	
 #### Meyve
 
