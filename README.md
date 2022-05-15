@@ -6,22 +6,16 @@ Uygulama 395 adet bitkinin bilgilerinin gösterildiği bir mobil projedir . Uygu
 
 # ****İÇİNDEKİLER****
 
-- **ÖZET**
+-  [  **ÖZET** ](#ozet)
 
-- **UYGULAMA BİLGİSİ**
+- [  ** KULLANILAN TEKNOLOJİLER** ](#kullanilan-teknolojiler)
 
--  **KULLANILAN TEKNOLOJİLER**
+-  [  **HOME ACTIVITY** ](#home-activity)
+	1. Home Fragment 
 
+-  [  **LİST ACTIVITY** ](#list-activity)
 
-
-- **HOME ACTIVITY**
-
-	1. Home Fragment
-
-
-- **LİST ACTIVITY**
-
-- **PLANT INFO ACTIVITY**
+-  [   **PLANT INFO ACTIVITY** ](#plant-info-activity)
 
 	1. Genel Fragment
 
@@ -43,16 +37,19 @@ Uygulama 395 adet bitkinin bilgilerinin gösterildiği bir mobil projedir . Uygu
 
 
 
+<a name="ozet"></a>
 ## ÖZET
 
 Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn işlemleri Adobe Photoshop ve Xd proğramlarından faydalanılarak tasarlanmış olup xml ile uygulamada gösterilmiştir. Uygulama java opp prensiplerinde yazılmış olup son derece dinamik bir şekilde çalışmaktadır. Veri tabanındaki tablolar 9 tanedir ve bir bitkinin sahip olabileceği tüm bilgiler mevcuttur. Bunlar genel, habitus ,çiçek, yaprak ,meyve, kullanım alanları , kullanım amacı ,yetişme isteği ve diğer bilgiler olmak üzere 9 tane tablo yapısı bulunmaktadır. Fragment yapıları ve navigation yapısı kullanılmıştır. Bu sayede bilgilere erişim oldukça hızlıdır ve uygulama son derece akıcıdır.
 
+<a name="kullanilan-teknolojiler"></a>
 ## KULLANILAN TEKNOLOJİLER VE ARAÇLAR
 
 ###### **Yazılım Dilleri :** Java, Php, Sql ,Xml
 
 ###### Kullanılan Proğramlar : Android Studio ,Visual Studio Code ,Adobe PhotoShop ,Adobe Xd ,Zeplin ,DB Browser Sqlite ,PhpMyAdmin
 
+<a name="home-activity"></a>
 ## Home Activity
 
 #### Home FragmentHome Fragment
@@ -65,6 +62,7 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 
 	<img src="./readme_images/home1.png" alt="home" width="200"/>
 
+<a name="list-activity"></a>
 #### List Activity
 
 - En başta bulunan yine home aktiviteye dönüş butonudur.
@@ -80,6 +78,7 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 
 	<img src="./readme_images/lıst1.png" alt="list" width="200"/>
 
+<a name="plant-info-activity"></a>
 #### Plant Info Activity
 
 - Burada örnek arama yaptığımızda ve Chorisia speciosa bitkisine tıkladığımızda bize Plant Info Activity
