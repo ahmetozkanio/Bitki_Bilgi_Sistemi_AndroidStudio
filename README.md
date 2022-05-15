@@ -102,7 +102,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	6. Ailesi
 	7. Genel Hakkında Notlar
 
-![](./readme_images/genel.png =100x200)
+
+<img src="./readme_images/genel.png" alt="genel" width="200"/>
 
 #### Habitus
 
