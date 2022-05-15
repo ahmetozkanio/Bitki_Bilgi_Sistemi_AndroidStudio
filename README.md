@@ -160,7 +160,8 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 	5. Meyve Yenilebilirliği
 	6. Meyve Zamanı
 
-	<img src="./readme_images/meyve.png" alt="meyve" width="200"/>
+
+<img src="./readme_images/meyve.png" alt="meyve" width="200"/>
 	
 #### Kullanım Alanları
 
