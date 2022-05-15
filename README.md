@@ -60,7 +60,7 @@ Genel olarak uygulama java ile android studio ortamında yazılmıştır. Dizayn
 - Bu aktivite uygulama ilk açıldığı zaman karşımıza gelen aktivitedir.
 - Ağaç resmi bir .gif yapısı olarak tasarlanmıştır.
 - Bitkiler butonu basıldığında bir sonraki bitkilerin listelendiği aktivite açılmaktadır.
-- Qr kod butonu ise bitkilerin bilgileri göstermek için qr code okuyucu kameranın açılıp okunan bilgilere göre bitkinin gösterilmesi için düşünüldü . (Henüz aktif değil sebebi qr code bilgilerinin elime daha ulaşmaması.)
+- Qr kod butonu ise bitkilerin bilgileri göstermek için qr code okuyucu kameranın açılıp okunan bilgilere göre bitkinin gösterilmesi için düşünüldü . 
 - İnfo butonu ise uygulama hakkında bilgilerin gösterildiği butondur.
 
 	<img src="./readme_images/home1.png" alt="home" width="200"/>
